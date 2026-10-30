@@ -1,0 +1,6 @@
+{
+  "name": "Eden Canvas — AI Interior Design for Renters",
+  "description": "AI interior design for renters everywhere by Wold Eden. Redesign your real room while preserving architecture, respecting rental rules, and staying on budget.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

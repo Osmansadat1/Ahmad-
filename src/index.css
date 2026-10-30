@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --color-walnut: #4A3B32;
+    --color-oat: #FAF8F5;
+    --color-cream: #F0ECE1;
+    --color-camel: #C69C6D;
+    --color-sage: #6E7864;
+    --color-greige: #B8B2A6;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-walnut: #FAF8F5;
+      --color-oat: #1B1613;
+      --color-cream: #251E19;
+      --color-camel: #D1A774;
+      --color-sage: #8B9680;
+    }
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-oat);
+    color: var(--color-walnut);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Hide scrollbars for carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

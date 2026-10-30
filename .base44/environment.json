@@ -1,0 +1,12 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/api/status",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "GEMINI_API_KEY",
+      "description": "Google AI Studio / Gemini API key used server-side for room redesign and lease parsing. Without it the app still boots and runs in a clearly labeled Demo Mode.",
+      "requiredAtBoot": false
+    }
+  ]
+}
